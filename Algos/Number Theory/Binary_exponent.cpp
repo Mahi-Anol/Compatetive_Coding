@@ -33,14 +33,14 @@ void mul(int mat1[3][3],int mat2[3][3])
      // pr2d(mat1,3,3);
      // pr2d(mat2,3,3);
     int res[3][3];
-    for(int i=0;i<3;i++)
+    for(int i=0;i<n;i++)
     {    
         // cout<<"Bal"<<endl;
-        for(int j=0;j<3;j++)
+        for(int j=0;j<m;j++)
         {    
             // cout<<"bal"<<endl;
             res[i][j]=0;
-            for(int k=0;k<3;k++)
+            for(int k=0;k<m;k++)
 
                 {
                     // cout<<"Bal"<<endl;
@@ -53,9 +53,9 @@ void mul(int mat1[3][3],int mat2[3][3])
     }
     
     // pr2d(res,3,3);
-    for(int i=0;i<3;i++)
+    for(int i=0;i<n;i++)
     {
-        for(int j=0;j<3;j++)
+        for(int j=0;j<m;j++)
         {
             I[i][j]=res[i][j];
         }
@@ -83,7 +83,7 @@ void matrix_exponent(int pow)
 void solution()
 {  
 
-    int n,m;
+    // int n,m;
 
     cin>>n>>m;
 
