@@ -9,12 +9,12 @@ namespace mahi{
          {
              if(p&1)
              {
-                 result=(result*x);
+                 result=(result*x)%mod;
                  p--;
              }
              else
              {
-                x=(x*x);
+                x=(x*x)%mod;
                 p>>=1;
              }
          }
